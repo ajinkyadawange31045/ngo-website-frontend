@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/homestyle.css">
+
+
+</head>
+
+<body onscroll="showScrollUp()" onload="setupScrollProgress()">
+
+
+    <!-- navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                        <button class="navbar-toggler offcanvas-trigger text-light" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+                            aria-controls="navbarOffcanvas">
+                            <svg class="svg-icon"
+                                style="width: 1.2em; height: 1.2em; vertical-align: middle; fill: #ffffff; overflow: hidden; stroke: #ffffff; stroke-width: 20;"
+                                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M987.7 86.8H367.3c-20.1 0-36.3 11-36.3 24.7v178.1c0 13.7 16.2 24.7 36.3 24.7h620.4c20.1 0 36.3-11 36.3-24.7v-178c0-13.8-16.2-24.8-36.3-24.8zM987.7 398.2H367.3c-20.1 0-36.3 11-36.3 24.7V601c0 13.7 16.2 24.7 36.3 24.7h620.4c20.1 0 36.3-11 36.3-24.7V423c0-13.7-16.2-24.8-36.3-24.8zM987.7 709.7H367.3c-20.1 0-36.3 11-36.3 24.7v178.1c0 13.7 16.2 24.7 36.3 24.7h620.4c20.1 0 36.3-11 36.3-24.7V734.4c0-13.7-16.2-24.7-36.3-24.7zM209.6 276.7L9.9 500.9c-5.6 6.3-5.6 15.9 0 22.2l199.7 224.2c10.2 11.4 29.1 4.2 29.1-11.1V287.8c0-15.3-18.9-22.6-29.1-11.1z" />
+                            </svg>
+
+
+                        </button>
+                        <nav class="main_nav">
+                            <ul>
+                                <li class="mr-1">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="ajinkya.jpeg" alt="AJINKYA" style="width: 40px;"
+                                            class="rounded-circle me-4">
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item px-2 text-light"
+                                    style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.2s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace"
+                                            href="javascript:void(0);" role="button" id="dropdownMenuLink"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            ABOUT US
+                                        </a>
+                                        <div class="dropdown-menu1 dropdownard-content  px-4 py-5"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <!-- First Column with a vertical line -->
+                                                    <div class="col-6 px-1"
+                                                        style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Vision and
+                                                                    Mission</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Board of Trustees</a>
+                                                            </li><br>
+                                                            <li><a class="dropdown-item" href="#">Advisor Board</a></li>
+                                                            <br>
+                                                            <li><a class="dropdown-item" href="#">Leadership Team</a>
+                                                            </li><br>
+                                                            <li><a class="dropdown-item" href="#">Government
+                                                                    Partners</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- Second Column -->
+                                                    <div class="col-6 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Think Tanks</a></li>
+                                                            <br>
+                                                            <li><a class="dropdown-item" href="#">Partners</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Financials</a></li>
+                                                            <br>
+                                                            <li><a class="dropdown-item" href="#">Audit</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">How Your Money is
+                                                                    Spent</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Financial Reports</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+
+                                <li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.2s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace" href="javascript:void(0);" role="button"
+                                            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                            WHAT WE DO
+                                        </a>
+                                        <div class="dropdown-menu dropdownard-content px-4 py-5" aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Work</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Educational Seminars</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Free Education</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Research</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Reach</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Schools covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Colleges Covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Impact</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Success Stories</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Experiences</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.2s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace" href="javascript:void(0);" role="button"
+                                            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                            GET INVOLVED
+                                        </a>
+                                        <div class="dropdown-menu dropdownard-content px-4 py-5" aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Work</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Educational Seminars</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Free Education</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Research</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Reach</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Schools covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Colleges Covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Impact</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Success Stories</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Experiences</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                
+                                <li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.2s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace" href="javascript:void(0);" role="button"
+                                            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                            PROGRAMS
+                                        </a>
+                                        <div class="dropdown-menu dropdownard-content px-4 py-5" aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Work</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Educational Seminars</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Free Education</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Research</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Reach</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Schools covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Colleges Covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Impact</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Success Stories</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Experiences</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+
+
+
+
+
+                                <li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.2s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace" href="javascript:void(0);" role="button"
+                                            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                            BLOGS
+                                        </a>
+                                        <div class="dropdown-menu dropdownard-content px-4 py-5" aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Work</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Educational Seminars</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Free Education</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Research</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Reach</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Schools covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Colleges Covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Impact</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Success Stories</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Experiences</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+
+
+
+                                <li class="nav-item px-2 text-light"
+                                    style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.8s;">
+                                    <button type="button"
+                                        class="nav-item btn btn-warning text-decoration-none font-monospace"
+                                        style="font-weight: bold; animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 1.0s;">DONATE</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Offcanvas Component -->
+    <div class="offcanvas offcanvas-end text-bg-dark" id="navbarOffcanvas">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Menu</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <!-- <li class="mr-1">
+                    <a class="navbar-brand" href="#">
+                        <img src="ajinkya.jpeg" alt="AJINKYA" style="width: 40px;" class="rounded-circle me-4">
+                    </a>
+                </li> -->
+                <li class="menu_mm px-1 text-light">
+                    <a href="#about-us" class="nav-link text-light text-decoration-none font-monospace"
+                        style="font-weight: bold;">ABOUT US</a>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <a href="#get-involved" class="nav-link text-light text-decoration-none font-monospace"
+                        style="font-weight: bold;">GET INVOLVED</a>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <a href="#programs" class="nav-link text-light text-decoration-none font-monospace"
+                        style="font-weight: bold;">PROGRAMS</a>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <a href="#blogs" class="nav-link text-light text-decoration-none font-monospace"
+                        style="font-weight: bold;">BLOGS</a>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <div class="dropdownard show">
+                        <a class="btn btn-block dropdown-toggle dropbtnard nav-link text-light text-decoration-none font-monospace"
+                            style="font-weight: bold;" href="javascript:void(0);" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu dropdownard-content" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="/category/{{cat.url}}">{{cat.title}}</a>
+                            <a href="/our_youtube_videos" class="dropdown-item">Videos</a>
+                            <a href="/gallery" class="dropdown-item">Gallery</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <button type="button" class="nav-item btn btn-warning text-decoration-none font-monospace"
+                        style="font-weight: bold; animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 1.0s;">DONATE</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="home text-center container">
+        <section class="showcase text-center">
+            <video src="../images/b_video1.mp4" muted loop autoplay type="video/mp4"></video>
+            <div class="overlay"></div>
+            <div class="textard ml-1">
+                <!-- <img class="text-center mb-2" width="10%" height="auto" src="{% static 'images/ub.jpg' %}" alt="Images"> -->
+                <!-- {% if request.user.is_authenticated %} -->
+                <p class="text-important">Hello! <b></b>, welcome to</p>
+                <!-- {%endif%} -->
+                <h2 style="color:white;"><b>SENA FOUNDATION</b></h2>
+                <h5>(SHIKSHA EVAM NAITIK AADHAR)</h5>
+
+                <a class="my-1" href="https://www.youtube.com/watch?v=7GKmAm_mXJM" target="_blank"><i
+                        class="fa fa-play mr-1"></i> About Us</a>
+            </div>
+            <ul class="social">
+                <li>
+                    <a target="_blank" href="https://ne-np.facebook.com/utkrishta.bharath.nitk"><img
+                            src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/UtkrishtaBNitk"><img
+                            src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/utkrishta.bharath.nitk/"><img
+                            src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+                </li>
+            </ul>
+        </section>
+        <!-- Menu -->
+    </div>
+
+    <!--How we work to make a difference -->
+    <section class="pt-5 py-3 pb-100 how_we_work_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center montregular heading_section color-blue">How we work to make a difference</h2>
+
+                    <div class="row how_wrap justify-content-around align-content-around pt-30 pt-xs-10 pt-sm-10 my-2">
+                        <div class="we_work_wrap col-6 col-md-3 text-center mb-1">
+                            <a href="#" style="color:inherit">
+                                <div class="circle-img" style="background-image: url('../images/1.jpeg')"></div>
+                            </a>
+                            <h5><a href="#" style="color:inherit">PM POSHAN Programme</a></h5>
+                        </div>
+
+                        <div class="we_work_wrap col-6 col-md-3 text-center mb-1">
+                            <a href="#" style="color:inherit">
+                                <div class="circle-img" style="background-image: url('../images/2.jpeg')"></div>
+                            </a>
+                            <h5><a href="#" style="color:inherit">Breakfast</a></h5>
+                        </div>
+
+                        <div class="we_work_wrap col-6 col-md-3 text-center mb-1">
+                            <a href="#" style="color:inherit">
+                                <div class="circle-img" style="background-image: url('../images/3.jpg')"></div>
+                            </a>
+                            <h5><a href="#" style="color:inherit">Anganwadi Feeding</a></h5>
+                        </div>
+
+                        <div class="we_work_wrap col-6 col-md-3 text-center mb-1">
+                            <a href="#" style="color:inherit">
+                                <div class="circle-img" style="background-image: url('../images/4.jpeg')"></div>
+                            </a>
+                            <h5><a href="#" style="color:inherit">Homeless Mothers</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- impact story -->
+    <!-- Outer section with full-width background image -->
+    <section class="impact_wrap">
+        <!-- Inner container to hold the content with padding -->
+
+        <div class="container py-3 align-content-center">
+
+            <div class="row">
+                <div class="col-12 text-center mb-30">
+                    <h2 class="montregular heading_section color-white">Impact Stories</h2>
+                </div>
+            </div>
+            <!-- Bootstrap Carousel -->
+            <div id="impactCarousel" class="carousel slide stories_section" data-bs-ride="carousel">
+                <div class="carousel-inner my-3">
+                    <div class="carousel-item active">
+                        <div class="row align-self-center">
+                            <div class="col-lg-4 col-md-4 col-12 dream_img align-self-center">
+                                <img src="../images/1.jpeg" class="main_img" alt="Yashasvi Story">
+                            </div>
+                            <div class="col-lg-7 col-md-7 dream_content col-12 align-self-center">
+                                <div class="mt-20">
+                                    <h5 class="color-white h5 montextralight pt-1">Yashasvi Dreams of Becoming a
+                                        Paramedic and Help People in Distress</h5>
+                                </div>
+                                <div class="fs-16 quotescontent">
+                                    <p>Yashasvi Desalli is a 12-year-old girl with an ambition that can solve her
+                                        family’s ongoing financial instability. She lives with her parents and 2 younger
+                                        siblings (brother and sister) in Dharwad, Karnataka.</p>
+                                </div>
+                                <div class="mt-10">
+                                    <p class="montregular color-white"><a
+                                            href="stories-of-children/yashasvi-dreams-of-becoming-a-paramedic-and-help-people-in-distress"
+                                            target="_self">Read more...</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1"></div>
+                        </div>
+                    </div>
+
+                    <!-- Add more carousel items similarly -->
+                    <div class="carousel-item">
+                        <div class="row align-self-center">
+                            <div class="col-lg-4 col-md-4 col-12 dream_img align-self-center">
+                                <img src="../images/2.jpeg" class="main_img" alt="Gungun Story">
+                            </div>
+                            <div class="col-lg-7 col-md-7 dream_content col-12 align-self-center">
+                                <div class="mt-20">
+                                    <h5 class="color-white h5 montextralight pt-1">Gungun Aspires to Become an English
+                                        Teacher and Spread Knowledge</h5>
+                                </div>
+                                <div class="fs-16 quotescontent">
+                                    <p>Gungun Kashyap is one of the 2.2 million beneficiaries of Akshaya Patra’s mid-day
+                                        meal programme and wishes to become an English Teacher. Read her journey here.
+                                    </p>
+                                </div>
+                                <div class="mt-10">
+                                    <p class="montregular color-white"><a
+                                            href="stories-of-children/gungun-aspires-become-an-english-teacher-and-spread-knowledge"
+                                            target="_self">Read more...</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1"></div>
+                        </div>
+                    </div>
+
+                    <!-- Additional carousel items go here -->
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#impactCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#impactCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- THE SENA FOUNDATION about -->
+    <section class="pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20">
+        <div class="container py-3">
+
+            <div class="row py-2">
+                <div class="col-lg-5 col-md-5 d-none d-sm-block align-self-center">
+                    <img src="../images/12.png" alt="Images_about" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-lg-7 col-md-7 d-lg-block d-md-block align-self-start">
+
+                    <h2 class="montregular heading_section color-white">THE SENA FOUNDATION</h2>
+                    <h5 class="montregular">(SIKSHA EVAM NAITIK AADHAR)</h5>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi provident nihil sapiente
+                        excepturi, qui laborum nam sunt quo autem eveniet? Fugiat obcaecati, maiores excepturi
+                        accusamus, eveniet placeat cumque reprehenderit assumenda eligendi laborum officiis quaerat
+                        illo, repellendus dolores amet facere deserunt aperiam? Iure, dolores aspernatur enim reiciendis
+                        quisquam minima perspiciatis consectetur dolorum sapiente necessitatibus, tempore soluta,
+                        consequatur facilis at! Consectetur, totam. Dignissimos id officia veniam tenetur eos, sed quo.
+                        Libero, ratione.</p>
+
+                    <div class="row mx-2 mb-20 vision-content">
+                        <div class="col-lg-6 offset1 col-md-6 col-sm-12 vision-item">
+                            <h4 class="m-md-2 m-sm-2">Our Vision</h4>
+
+                            <p class="desc m-md-2 m-sm-2">No child in India shall be deprived of education because of
+                                hunger</p>
+                        </div>
+
+                        <div class="col-lg-6 offset1 col-md-6 col-sm-12 vision-item">
+                            <h4 class="m-md-2 m-sm-2">Our Mission</h4>
+
+                            <p class="desc m-md-2 m-sm-2">To feed 3 million children everyday by 2025</p>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0"><a class="btn btn-readmore " href="/about-us/">Read More</a></div>
+                </div>
+            </div>
+
+            <div class="row align-self-center justify-content-around mt-5 digit_static">
+                <div class="col-3 justify-content-center align-items-center static_item">
+                    <img src="../images/1.jpeg" class="static_image" alt="">
+                    <div class="content_wrap">
+                        <h6 class="text-dark p-1" style="font-weight: bold;">Over 4 billion meals served</h6>
+                    </div>
+                </div>
+
+                <div class="col-3 justify-content-center align-items-center static_item">
+                    <img src="../images/4.jpeg" class="static_image" alt="">
+                    <div class="content_wrap">
+                        <h6 class="text-dark p-1" style="font-weight: bold;">Over 2.2 million+ children benefitted</h6>
+                    </div>
+                </div>
+
+                <div class="col-3 justify-content-center align-items-center static_item">
+                    <img src="../images/3.jpg" class="static_image" alt="">
+                    <div class="content_wrap">
+                        <h6 class="text-dark p-1" style="font-weight: bold;">Reached to over 23,000 schools</h6>
+                    </div>
+                </div>
+
+                <div class="col-3 justify-content-center align-items-center static_item">
+                    <img src="../images/1.jpeg" class="static_image" alt="">
+                    <div class="content_wrap">
+                        <h6 class="text-dark p-1" style="font-weight: bold;">16 States and 2 Union Territories</h6>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Fundraising Campaigns -->
+    <section class="impact_wrap">
+        <div class="container py-3 align-content-center">
+            <div class="row">
+                <div class="col-12 text-center mb-30">
+                    <h2 class="montregular heading_section color-white">Fundraising Campaigns</h2>
+                </div>
+            </div>
+            <!-- Bootstrap Carousel -->
+            <div id="fundraisingCarousel" class="carousel slide stories-section" data-bs-ride="carousel">
+                <div class="carousel-inner my-3">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-12 mb-3">
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                                <div class="card p-2" style="height: 100%;">
+                                    <img class="card-img-top" src="../images/1.jpeg" alt="Card image"
+                                        style="width:100%; height:auto;">
+                                    <div class="card-body">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-animated bg-success progress-bar-striped btn btn-primary"
+                                                style="width:30%" data-bs-toggle="tooltip" title="30%"></div>
+                                        </div>
+                                        <div style="text-align: center;"
+                                            class="justify-content-center align-items-center ">
+                                            <p class="card-text pt-3 pb-0">Raised: Rs. 4224242 <br>Goal: Rs. 4224242</p>
+                                            <hr>
+                                            <h5 class="card-title pt-0" style="font-weight: bold;">Fund a students free
+                                                education</h5>
+                                            <a href="#" class="btn btn-warning">Donate Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-2 col-sm-12 mb-3">
+                                
+                            </div> -->
+                            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                                <div class="card p-2" style="height: 100%;">
+                                    <img class="card-img-top" src="../images/1.jpeg" alt="Card image"
+                                        style="width:100%; height:auto;">
+                                    <div class="card-body">
+                                        <div class="progress-bar progress-bar-animated bg-success progress-bar-striped btn btn-primary"
+                                            style="width:30%" data-bs-toggle="tooltip" title="30%"></div>
+                                        <div style="text-align: center;"
+                                            class="justify-content-center align-items-center ">
+                                            <p class="card-text pt-3 pb-0">Raised: Rs. 4224242 <br>Goal: Rs. 4224242</p>
+                                            <hr>
+                                            <h5 class="card-title pt-0" style="font-weight: bold;">Fund a students free
+                                                education</h5>
+                                            <a href="#" class="btn btn-warning">Donate Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-12 mb-3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-12 mb-3">
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                                <div class="card p-2" style="height: 100%;">
+                                    <img class="card-img-top" src="../images/1.jpeg" alt="Card image"
+                                        style="width:100%; height:auto;">
+                                    <div class="card-body">
+                                        <div class="progress-bar progress-bar-animated bg-success progress-bar-striped btn btn-primary"
+                                            style="width:30%" data-bs-toggle="tooltip" title="30%"></div>
+                                        <div style="text-align: center;"
+                                            class="justify-content-center align-items-center ">
+                                            <p class="card-text pt-3 pb-0">Raised: Rs. 4224242 <br>Goal: Rs. 4224242</p>
+                                            <hr>
+                                            <h5 class="card-title pt-0" style="font-weight: bold;">Fund a students free
+                                                education</h5>
+                                            <a href="#" class="btn btn-warning">Donate Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-2 col-sm-12 mb-3">
+                                
+                            </div> -->
+                            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                                <div class="card p-2" style="height: 100%;">
+                                    <img class="card-img-top" src="../images/1.jpeg" alt="Card image"
+                                        style="width:100%; height:auto;">
+                                    <div class="card-body">
+                                        <div class="progress-bar progress-bar-animated bg-success progress-bar-striped btn btn-primary"
+                                            style="width:30%" data-bs-toggle="tooltip" title="30%"></div>
+                                        <div style="text-align: center;"
+                                            class="justify-content-center align-items-center ">
+                                            <p class="card-text pt-3 pb-0">Raised: Rs. 4224242 <br>Goal: Rs. 4224242</p>
+                                            <hr>
+                                            <h5 class="card-title pt-0" style="font-weight: bold;">Fund a students free
+                                                education</h5>
+                                            <a href="#" class="btn btn-warning">Donate Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-12 mb-3">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-12 mb-3">
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                                <div class="card p-2" style="height: 100%;">
+                                    <img class="card-img-top" src="../images/1.jpeg" alt="Card image"
+                                        style="width:100%; height:auto;">
+                                    <div class="card-body">
+                                        <div class="progress-bar progress-bar-animated bg-success progress-bar-striped btn btn-primary"
+                                            style="width:30%" data-bs-toggle="tooltip" title="30%"></div>
+                                        <div style="text-align: center;"
+                                            class="justify-content-center align-items-center ">
+                                            <p class="card-text pt-3 pb-0">Raised: Rs. 4224242 <br>Goal: Rs. 4224242</p>
+                                            <hr>
+                                            <h5 class="card-title pt-0" style="font-weight: bold;">Fund a students free
+                                                education</h5>
+                                            <a href="#" class="btn btn-warning">Donate Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-2 col-sm-12 mb-3">
+                                
+                            </div> -->
+                            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                                <div class="card p-2" style="height: 100%;">
+                                    <img class="card-img-top" src="../images/1.jpeg" alt="Card image"
+                                        style="width:100%; height:auto;">
+                                    <div class="card-body">
+                                        <div class="progress-bar progress-bar-animated bg-success progress-bar-striped btn btn-primary"
+                                            style="width:30%" data-bs-toggle="tooltip" title="30%"></div>
+                                        <div style="text-align: center;"
+                                            class="justify-content-center align-items-center ">
+                                            <p class="card-text pt-3 pb-0">Raised: Rs. 4224242 <br>Goal: Rs. 4224242</p>
+                                            <hr>
+                                            <h5 class="card-title pt-0" style="font-weight: bold;">Fund a students free
+                                                education</h5>
+                                            <a href="#" class="btn btn-warning">Donate Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-12 mb-3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#fundraisingCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#fundraisingCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Latest Updates -->
+    <div class="container py-3">
+        <div class="container text-center py-2">
+            <h1>Latest Updates</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-12 my-2 ">
+                <div class="card p-2" style="width:auto; height: 100%;">
+                    <img class="card-img-top" src="../images/1.jpeg" alt="Card image" style="width:100%; height:auto;">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                        <a href="#" class="btn btn-warning">View More</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 col-md-12 my-2 ">
+                <div class="card p-2" style="width:auto; height: 100%;">
+                    <img class="card-img-top" src="../images/2.jpeg" alt="Card image" style="width:100%; height:auto;">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                        <a href="#" class="btn btn-warning">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 my-2 ">
+                <div class="card p-2" style="width:auto; height: 100%;">
+                    <img class="card-img-top" src="../images/4.jpeg" alt="Card image" style="width:100%; height:auto;">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                        <a href="#" class="btn btn-warning">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 my-2 ">
+                <div class="card p-2" style="width:auto; height: 100%;">
+                    <img class="card-img-top" src="../images/2.jpeg" alt="Card image" style="width:100%; height:auto;">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                        <a href="#" class="btn btn-warning">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Learn how you can help -->
+    <section style="background-color: #F4BC21;">
+        <div class=" py-3 m-lg-5 m-md-3 m-sm-1">
+            <div class="row">
+                <div class="col-12 text-center mb-30 mt-3 py-3">
+                    <h2 class="montregular heading_section color-white">Learn how you can help</h2>
+                </div>
+            </div>
+            <div class="section no-padding">
+                <ul class="ministriesGrid  ministriesGrid-useDescriptions">
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/brighten-the-holidays/"
+                            class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/494a13aa-b719-41ec-836f-e8c7e9dacc29_grid_holidays.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)" alt="Holiday Giving"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/494a13aa-b719-41ec-836f-e8c7e9dacc29_grid_holidays.jpg">
+                            <p class="ministriesGrid-title">Holiday Giving</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Each year, millions of children don't have any
+                                        Christmas gifts to unwrap because there's no money in the budget.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Holiday Giving</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/rent-mortgage-and-utility-assistance/"
+                            class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/d2509657-829b-4bf7-80b7-a2e1d43500a1_rentandutilityassistance.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Rent and Utility Assistance"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/d2509657-829b-4bf7-80b7-a2e1d43500a1_rentandutilityassistance.jpg">
+                            <p class="ministriesGrid-title">Rent and Utility Assistance</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">The Salvation Army provided $3,870,131 in
+                                        financial assistance in 2021.</p>
+
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Rent and Utility
+                                        Assistance</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/provide-shelter/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/93ed9b06-295b-4d51-a6c5-ea253f47c8e2_grid_shelter.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Homeless Shelters"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/93ed9b06-295b-4d51-a6c5-ea253f47c8e2_grid_shelter.jpg">
+                            <p class="ministriesGrid-title">Homeless Shelters</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">More than half a million people experience
+                                        homelessness in America every day.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Homeless Shelters</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/cure-hunger/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/c77a310f-eb61-4e2d-b315-45a6f9a901f4_grid_hunger.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)" alt="Food Pantries"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/c77a310f-eb61-4e2d-b315-45a6f9a901f4_grid_hunger.jpg">
+                            <p class="ministriesGrid-title">Food Pantries</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Every day, almost 50 million Americans face food
+                                        insecurity.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Food Pantries</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/rehabilitation/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/55d6a962-0c28-464b-ae64-336a1b64b0a8_grid_addiction.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)" alt="Rehabilitation"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/55d6a962-0c28-464b-ae64-336a1b64b0a8_grid_addiction.jpg">
+                            <p class="ministriesGrid-title">Rehabilitation</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Alcohol abuse kills 75,000 people in the United
+                                        States every year.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Rehabilitation</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/equip-families" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/e02ba04f-c37e-47ea-835a-1da5736593a8_summercamps.png"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)" alt="Summer Camps"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/e02ba04f-c37e-47ea-835a-1da5736593a8_summercamps.png">
+                            <p class="ministriesGrid-title">Summer Camps</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">The Salvation Army Gives Kids and Families a
+                                        Chance at a Better Life</p>
+
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Summer Camps</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/help-disaster-survivors/"
+                            class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/668a321b-96cc-4d73-948b-62053b4a5800_grid_disaster.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Disaster Relief"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/668a321b-96cc-4d73-948b-62053b4a5800_grid_disaster.jpg">
+                            <p class="ministriesGrid-title">Disaster Relief</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Over 90 million Americans become survivors of
+                                        natural disasters every year.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Disaster Relief</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/the-lgtbq-community-and-the-salvation-army/"
+                            class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/c2864600-3445-4ac6-9081-fb5819e93b29_LGBT.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)" alt="LGBTQ+ Support"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/c2864600-3445-4ac6-9081-fb5819e93b29_LGBT.jpg">
+                            <p class="ministriesGrid-title">LGBTQ+ Support</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Forty percent of homeless youth in the United
+                                        States identifies as LGBTQ+</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">LGBTQ+ Support</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/stop-domestic-abuse/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/e713c5df-a594-4f79-8002-2d24f2f80798_grid_domestic_abuse.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Help for Domestic Abuse"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/e713c5df-a594-4f79-8002-2d24f2f80798_grid_domestic_abuse.jpg">
+                            <p class="ministriesGrid-title">Help for Domestic Abuse</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Every hour in the U.S., 400 women become victims
+                                        of domestic and psychological abuse.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Help for Domestic
+                                        Abuse</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/love-the-elderly/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/2f4259cb-bd77-4ee5-b9fc-37da1c876a9e_Love-the-elderly-button.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Services for the Aging"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/2f4259cb-bd77-4ee5-b9fc-37da1c876a9e_Love-the-elderly-button.jpg">
+                            <p class="ministriesGrid-title">Services for the Aging</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Each year, depression affects 7 million Americans
+                                        over the age of 65.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Services for the
+                                        Aging</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/assist-the-unemployed/"
+                            class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/07df640a-b76c-4a57-be1e-7db1b6261381_grid_jobs.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)" alt="Job Training"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/07df640a-b76c-4a57-be1e-7db1b6261381_grid_jobs.jpg">
+                            <p class="ministriesGrid-title">Job Training</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Among homeless people, nearly 1 in 3 suffer from a
+                                        mental health disorder.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Job Training</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/serve-veterans/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/5db18724-8711-463e-b8c4-dbf7782f687c_serve-veterans-button.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Veteran Services"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/5db18724-8711-463e-b8c4-dbf7782f687c_serve-veterans-button.jpg">
+                            <p class="ministriesGrid-title">Veteran Services</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Veterans make up 8% of the homeless population in
+                                        the U.S.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Veteran Services</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/overcome-poverty/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/a3b8f247-ea24-4e35-a0f8-9ae8986f60b7_grid_poverty.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Life Skills to Escape Poverty"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/a3b8f247-ea24-4e35-a0f8-9ae8986f60b7_grid_poverty.jpg">
+                            <p class="ministriesGrid-title">Life Skills to Escape Poverty</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Fourteen percent of Americans live below the
+                                        poverty line.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Life Skills to Escape
+                                        Poverty</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/share-gods-love/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/c466b60f-05c2-4df6-bd3b-61c88218d432_grid_love.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Spiritual and Worship Services"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/c466b60f-05c2-4df6-bd3b-61c88218d432_grid_love.jpg">
+                            <p class="ministriesGrid-title">Spiritual and Worship Services</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Eight out of 10 Americans believe spiritual faith
+                                        assists in disease recovery.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Spiritual and Worship
+                                        Services</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/the-greatest-need/" class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/73adba9f-363c-4ba7-9267-26fc8723ccec_grid_need.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Grassroots Services"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/73adba9f-363c-4ba7-9267-26fc8723ccec_grid_need.jpg">
+                            <p class="ministriesGrid-title">Grassroots Services</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">Eighty-two cents of every dollar given to The
+                                        Salvation Army goes to work in the community in which it was donated.</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Grassroots
+                                        Services</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="ministriesGrid-item js-showOnHoverParent">
+                        <a href="https://www.salvationarmyusa.org/usn/fight-human-trafficking/"
+                            class="ministriesGrid-link">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/fd50f4b5-1bbf-4421-97e2-97f31fbd008c_grid_trafficking.jpg"
+                                class="ministriesGrid-image  lazyloaded" sizes="(max-width: 768px)"
+                                alt="Responses to Human Trafficking"
+                                srcset="https://s3.amazonaws.com/usn-cache.salvationarmy.org/fd50f4b5-1bbf-4421-97e2-97f31fbd008c_grid_trafficking.jpg">
+                            <p class="ministriesGrid-title">Responses to Human Trafficking</p>
+                            <div class="ministriesGrid-overlay u-showOnHover js-showOnHover">
+                                <div class="ministriesGrid-content">
+                                    <p class="ministriesGrid-caption">There are 5.4 victims of human trafficking for
+                                        every 1,000 people in the world (ILO).</p>
+                                    <span class="btn btn-inverse btn-black ministriesGrid-btn">Responses to Human
+                                        Trafficking</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 text-center mb-30 mb-3">
+                <h2 class="montregular heading_section color-white">Impact Stories</h2>
+            </div>
+        </div>
+        <div class="row wow fadeInLeft" data-wow-delay=".3s">
+            <div class="col-lg-6 col-xl-5 pr-lg-5 pb-5">
+                <h4 class="text-center font-bold" style="font-weight: 400; color: black;"><b>talk in schools</b></h6>
+                    <img class="img-fluid rounded z-depth-2" src="../images/2.jpeg" alt="project image" />
+                    <p>Conducted on :a asdfasd </p>
+            </div>
+            <div class="col-lg-6 col-xl-7 pl-lg-5 pb-4 slide-left">
+
+
+                <div class="row mb-3">
+                    <div class="mr-1"></div>
+                    <div class="">
+                        <h6 class="" style="color: black;">
+                            </h5>
+                            <p class="grey-text" style="color: black;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi omnis dolores
+                                quisquam laborum rerum, unde doloremque nulla quas blanditiis neque ullam maxime
+                                expedita. Optio dolore nesciunt laborum distinctio? Iure maxime officiis saepe itaque
+                                repellendus, velit consequuntur culpa. Unde quia voluptas numquam autem ullam beatae
+                                placeat est vero.
+                            </p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="mr-1"></div>
+                    <div class="">
+                        <h6 class="" style="color: black;">
+                            </h5>
+                            <p class="grey-text" style="color: black;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem, nam architecto
+                                a dolores commodi exercitationem itaque? Qui rerum numquam possimus ducimus
+                                necessitatibus, sapiente, fugiat beatae error quo dolorum neque.
+                            </p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="mr-1"></div>
+                    <div class="">
+                        <h6 class="" style="color: black;">
+                            </h5>
+                            <p class="grey-text" style="color: black;">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt accusamus ratione
+                                repudiandae error eligendi in id, nostrum corrupti obcaecati totam sed numquam odio
+                                ullam cum autem eum aspernatur tenetur neque?
+                            </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr />
+
+    </div>
+
+
+
+    <div class="container mt-4">
+
+        <div class="row wow fadeInLeft" data-wow-delay=".3s">
+            <div class="col-lg-6 col-xl-5 pr-lg-5 pb-5">
+                <h4 class="text-center font-bold" style="font-weight: 400; color: black;"><b>talk in schools</b></h6>
+                    <img class="img-fluid rounded z-depth-2" src="../images/2.jpeg" alt="project image" />
+                    <p>Conducted on :a asdfasd </p>
+            </div>
+            <div class="col-lg-6 col-xl-7 pl-lg-5 pb-4 slide-left">
+
+
+                <div class="row mb-3">
+                    <div class="mr-1"></div>
+                    <div class="">
+                        <h6 class="" style="color: black;">
+                            </h5>
+                            <p class="grey-text" style="color: black;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi omnis dolores
+                                quisquam laborum rerum, unde doloremque nulla quas blanditiis neque ullam maxime
+                                expedita. Optio dolore nesciunt laborum distinctio? Iure maxime officiis saepe itaque
+                                repellendus, velit consequuntur culpa. Unde quia voluptas numquam autem ullam beatae
+                                placeat est vero.
+                            </p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="mr-1"></div>
+                    <div class="">
+                        <h6 class="" style="color: black;">
+                            </h5>
+                            <p class="grey-text" style="color: black;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem, nam architecto
+                                a dolores commodi exercitationem itaque? Qui rerum numquam possimus ducimus
+                                necessitatibus, sapiente, fugiat beatae error quo dolorum neque.
+                            </p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="mr-1"></div>
+                    <div class="">
+                        <h6 class="" style="color: black;">
+                            </h5>
+                            <p class="grey-text" style="color: black;">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt accusamus ratione
+                                repudiandae error eligendi in id, nostrum corrupti obcaecati totam sed numquam odio
+                                ullam cum autem eum aspernatur tenetur neque?
+                            </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr />
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="darkblue-bg p-5 pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20 ctc">
+        <div class="container">
+            <div class="row align-items-center justify-content-between"> <!-- Adjusted for better alignment -->
+                <div class="col-lg-9 col-md-9 col-sm-12 text-right">
+                    <h3 class="montextralight heading color-white">The Best Way to Make a Difference in the Lives of
+                        Others</h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 text-left"> <!-- Removed unnecessary wrapper div -->
+                    <a class="donate-btn_call_to_a" href="onlinedonations">DONATE NOW</a>
+                    <!-- Direct link for simplicity -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="colophon" class="site-footer">
+        <div class="footersection">
+            <div class="container footer">
+                <div class="row">
+                    <div
+                        class="col-xl-3 col-12 newsletter-section text-lg-left text-md-left text-sm-center text-center">
+                        <div class="footer_logo_sec footer_center">
+                            <img src="includefiles/settings/logo1.png" class="img-fluid" alt="logo">
+                        </div>
+                        <div class="footcontent pt-20">
+                            <p class="montregular fs-14">
+                                The Akshaya Patra Foundation is a non profit organisation that strives to eliminate
+                                classroom hunger by implementing the Mid Day Meal Programme
+                            </p>
+                        </div>
+                        <div class="footer_content">
+                            <ul class="social_links">
+                                <li>
+                                    <a href="https://www.instagram.com/theakshayapatrafoundation/" target="_blank"
+                                        class="color-head">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://in.linkedin.com/company/the-akshaya-patra-foundation"
+                                        target="_blank" class="color-head">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/TheAkshayapatraFoundation" target="_blank"
+                                        class="color-head">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/akshayapatra" target="_blank" class="color-head">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCQ8TSAaij9nwDLfiaLotDDA" target="_blank"
+                                        class="color-head">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 mt-5	d-xl-none mobile-show">
+                            <div class="footer_links">
+                                <p class="m-0 text-left  color-head">Get IN Touch</p>
+                                <div class="AW-Form-316784773"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-9 d-lg-block d-md-block">
+                        <div class="row">
+                            <div class="col-6 col-xl-2">
+                                <div class="footer_links">
+                                    <p class="color-head">About Us</p>
+                                    <div class="menu-about-us-footer-container">
+                                        <ul id="menu-about-us-footer" class="footer_list">
+                                            <li>
+                                                <a href="about-us">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-vision-and-mission">Our Vision and Mission</a>
+                                            </li>
+                                            <li>
+                                                <a href="history">Inspiration – The story of Hope</a>
+                                            </li>
+                                            <li>
+                                                <a href="board-of-trustees">Board of Trustees</a>
+                                            </li>
+                                            <li>
+                                                <a href="tax-exemption-donation-faqs">Tax exemption donation faqs</a>
+                                            </li>
+                                            <li>
+                                                <a href="donors-privacy-policy">Term’s and Conditions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-2">
+                                <div class="footer_links">
+                                    <p class="color-head">Our Work</p>
+                                    <div class="menu-our-work-container">
+                                        <ul id="menu-our-work" class="footer_list">
+                                            <li>
+                                                <a href="our-work">Our Work</a>
+                                            </li>
+                                            <li>
+                                                <a href="feeding-for-education">Feeding For Education</a>
+                                            </li>
+                                            <li>
+                                                <a href="mid-day-meal">Mid-Day Meal</a>
+                                            </li>
+                                            <li>
+                                                <a href="disaster-relief-feeding">Relief feeding</a>
+                                            </li>
+                                            <li>
+                                                <a href="research-advocacy">Research &amp; Advocacy</a>
+                                            </li>
+                                            <li>
+                                                <a href="beyond-meals">Beyond Meals</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-2">
+                                <div class="footer_links">
+                                    <p class="color-head">Get Involved</p>
+                                    <div class="menu-get-involved-container">
+                                        <ul id="menu-get-involved" class="footer_list">
+                                            <li>
+                                                <a href="future-shaper">Future shaper</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-2">
+                                <div class="footer_links">
+                                    <p class="color-head">Donate</p>
+                                    <div class="menu-donate-container">
+                                        <ul id="menu-donate" class="footer_list">
+                                            <li>
+                                                <a href="onlinedonations">Online donations</a>
+                                            </li>
+                                            <li>
+                                                <a href="sponsor-a-school-for-a-year">Sponsor a School</a>
+                                            </li>
+                                            <li>
+                                                <a href="kitchen-equipment">Sponsor a kitchen</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-4 d-none d-sm-block">
+                                <div class="footer_links">
+                                    <p class="color-head">Get IN Touch</p>
+                                    <div class="menu-donate-container">
+                                        <ul id="menu-donate" class="footer_list">
+                                            <li>
+                                                <a href="contact-us">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <form name="subscribers" id="subscribers"
+                                            action="https://www.aweber.com/thankyou.htm" method="post"
+                                            novalidate="novalidate">
+                                            <div class="form-group">
+                                                <span>Subscribe E-newsletter</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="name" placeholder="Full Name"
+                                                    class="form-control style-1">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="email" placeholder="Email Address"
+                                                    class="form-control style-1">
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-submit">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="row">
+                    <div class="col-sm-3 text-lg-left text-md-left text-sm-center text-center">
+                        <div class="donate_upi pt-0">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="web_list web_list footer_links" style="display:none;">
+                                    <p class="color-head">REGIONAL WEBSITES</p>
+                                    <ul class="state_list">
+                                        <li>Andhra Pradesh</li>
+                                        <li>Assam</li>
+                                        <li>Gujarat</li>
+                                        <li>Karnataka</li>
+                                        <li>Odisha</li>
+                                        <li>Rajasthan</li>
+                                        <li>Tamil Nadu</li>
+                                        <li>Telangana</li>
+                                        <li>U.P.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <hr class="web_list_line">
+                            </div>
+                            <div class="col-sm-3 charity_id">
+                                <p>Charity Id : AAATT6468P</p>
+                            </div>
+                            <div class="col-sm-7 copyright">
+                                <!--<p>The Akshaya Patra Foundation © 2024 Website Developed & Maintenance By <a href="https://www.creativeyogi.com/">Creative Yogi</a></p>-->
+                                <p>The Akshaya Patra Foundation © 2024</p>
+                            </div>
+                            <div class="col-sm-2 copyright">
+                                <img src="includefiles/settings/GPTW23-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="includes/asset/image/footer_bg.png" alt="" class="footer_bg">
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            var nav = document.querySelector('.main_nav');
+            nav.classList.toggle('active');
+        }
+
+
+    </script>
+    <script>
+        document.querySelectorAll('.offcanvas-body a').forEach(link => {
+            link.addEventListener('click', () => {
+                const offcanvasElement = document.querySelector('#navbarOffcanvas');
+                const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                bsOffcanvas.hide();
+            });
+        });
+
+    </script>
+
+
+    <!-- Include Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

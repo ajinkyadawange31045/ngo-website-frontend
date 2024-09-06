@@ -1,0 +1,70 @@
+<!-- verticle navbars -->
+
+#EE771D -> orange
+
+#F4BC21 -> yellow
+
+#152125 -> black
+
+#F2C94C -> yellow
+
+#C73E1D -> brown
+
+
+color: var(--black);
+font-weight: 700;
+font-size: 3em;
+line-height: 1.2em;
+
+https://www.akshayapatra.org/includefiles/userfiles/images/SherishaShala-32
+https://www.akshayapatra.org/includefiles/userfiles/images/CBST1525.png
+https://www.akshayapatra.org/includefiles/userfiles/images/DSC00937.png
+https://www.akshayapatra.org/includefiles/userfiles/images/Homeless.jpg
+
+
+
+  .ministriesGrid-title,
+  .ministriesGrid-caption,
+  .ministriesGrid-icon,
+  .ministriesGrid-btn {
+    opacity: 0; /* Hide text and button initially */
+    transition: opacity 0.35s ease-in-out; /* Smooth transition on hover */
+    position: absolute; /* Position elements within the grid item */
+  }
+  
+  .ministriesGrid-link:hover .ministriesGrid-title,
+  .ministriesGrid-link:hover .ministriesGrid-caption,
+  .ministriesGrid-link:hover .ministriesGrid-icon,
+  .ministriesGrid-link:hover .ministriesGrid-btn {
+    opacity: 1; /* Show text and button on hover */
+  }
+  
+  
+  .ministriesGrid-caption {
+    font-size: 13px; /* Caption font size */
+    line-height: 1.2; /* Line spacing */
+    margin: 0; /* Remove margin */
+    /* Position the caption below the title (adjust as needed) */
+    bottom: calc(1em + 10px); /* Add padding to title height */
+    width: 100%; /* Span the full width */
+    padding: 0 10px; /* Padding for text */
+    text-align: center; /* Center align text */
+    justify-content: center;
+  }
+  
+  .ministriesGrid-icon {
+    /* Style the icon as needed */
+    /* Adjust position for desired placement (e.g., top, center) */
+  }
+  
+  .ministriesGrid-btn {
+    /* Style the button as needed */
+    /* Adjust position for desired placement (e.g., bottom center) */
+  }
+  
+  /* You can remove these classes if no longer needed */
+  .u-showOnHover {
+    opacity: 0;
+    transition: all 0.35s;
+  }
+  

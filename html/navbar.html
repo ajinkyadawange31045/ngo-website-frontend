@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-item {
+            opacity: 0;
+            /* Initial state: hidden */
+        }
+
+        @keyframes zoomOutIn {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+                /* Zoom out */
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                /* Back to original position */
+            }
+        }
+
+        .nav-item .nav-link {
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .nav-item .nav-link:hover {
+            color: #ffc107 !important;
+            /* Bootstrap 'text-warning' color */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar container navbar-expand-md navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="ajinkya.jpeg" alt="AJINKYA" style="width: 40px;" class="rounded-circle me-4">
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+                <ul class="nav">
+                    <li class="nav-item px-2 text-dark"
+                        style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0s;">
+                        <a href="#about-us" class="nav-link text-dark text-decoration-none font-monospace"
+                            style="font-weight: bold;">ABOUT US</a>
+                    </li>
+                    <li class="nav-item px-2 text-dark"
+                        style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.2s;">
+                        <a href="#get-involved" class="nav-link text-dark text-decoration-none font-monospace"
+                            style="font-weight: bold;">GET INVOLVED</a>
+                    </li>
+                    <li class="nav-item px-2 text-dark"
+                        style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.4s;">
+                        <a href="#programs" class="nav-link text-dark text-decoration-none font-monospace"
+                            style="font-weight: bold;">PROGRAMS</a>
+                    </li>
+                    <!-- <li class="nav-item px-2 text-dark" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.6s;">
+                        <a href="#our-work" class="nav-link text-dark text-decoration-none font-monospace" style="font-weight: bold;">OUR WORK</a>
+                    </li> -->
+                    <li class="nav-item px-2 text-dark"
+                        style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.8s;">
+                        <a href="#blogs" class="nav-link text-dark text-decoration-none font-monospace"
+                            style="font-weight: bold;">BLOGS</a>
+                    </li>
+                </ul>
+                <button type="button" class="nav-item btn btn-warning text-decoration-none font-monospace"
+                    style="font-weight: bold; animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 1.0s;">DONATE</button>
+
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+</body>
+</html>
