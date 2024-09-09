@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/headerstyle.css">
+    <link rel="stylesheet" href="../css/aboutstyle.css">
+    <link rel="stylesheet" href="../css/footerstyle.css">
+</head>
+<body onscroll="showScrollUp()" onload="setupScrollProgress()">
+       <!-- navbar -->
+       <header class="header1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                        <button class="navbar-toggler offcanvas-trigger text-light" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+                            aria-controls="navbarOffcanvas">
+                            <svg class="svg-icon"
+                                style="width: 1.2em; height: 1.2em; vertical-align: middle; fill: #ffffff; overflow: hidden; stroke: #ffffff; stroke-width: 20;"
+                                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M987.7 86.8H367.3c-20.1 0-36.3 11-36.3 24.7v178.1c0 13.7 16.2 24.7 36.3 24.7h620.4c20.1 0 36.3-11 36.3-24.7v-178c0-13.8-16.2-24.8-36.3-24.8zM987.7 398.2H367.3c-20.1 0-36.3 11-36.3 24.7V601c0 13.7 16.2 24.7 36.3 24.7h620.4c20.1 0 36.3-11 36.3-24.7V423c0-13.7-16.2-24.8-36.3-24.8zM987.7 709.7H367.3c-20.1 0-36.3 11-36.3 24.7v178.1c0 13.7 16.2 24.7 36.3 24.7h620.4c20.1 0 36.3-11 36.3-24.7V734.4c0-13.7-16.2-24.7-36.3-24.7zM209.6 276.7L9.9 500.9c-5.6 6.3-5.6 15.9 0 22.2l199.7 224.2c10.2 11.4 29.1 4.2 29.1-11.1V287.8c0-15.3-18.9-22.6-29.1-11.1z" />
+                            </svg>
+
+
+                        </button>
+                        <nav class="main_nav">
+                            <ul>
+                                <li class="mr-1">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="ajinkya.jpeg" alt="AJINKYA" style="width: 40px;"
+                                            class="rounded-circle me-4">
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item px-2 text-light"
+                                    style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.2s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace"
+                                            href="javascript:void(0);" role="button" id="dropdownMenuLink"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            ABOUT US
+                                        </a>
+                                        <div class="dropdown-menu1 dropdownard-content  px-4 py-5"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <!-- First Column with a vertical line -->
+                                                    <div class="col-6 px-1"
+                                                        style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" style="font-weight: bold;" href="../html/about.html">About Us</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Our Vision and Mission</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Board of Trustees</a>
+                                                            </li><br>
+                                                            <li><a class="dropdown-item" href="#">Advisor Board</a></li>
+                                                            <br>
+                                                            <li><a class="dropdown-item" href="#">Leadership Team</a>
+                                                            </li><br>
+                                                            <li><a class="dropdown-item" href="#">Government
+                                                                    Partners</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- Second Column -->
+                                                    <div class="col-6 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Think Tanks</a></li>
+                                                            <br>
+                                                            <li><a class="dropdown-item" href="#">Partners</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Financials</a></li>
+                                                            <br>
+                                                            <li><a class="dropdown-item" href="#">Audit</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">How Your Money is
+                                                                    Spent</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Financial Reports</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+
+                                <li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.4s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace" href="javascript:void(0);" role="button"
+                                            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                            WHAT WE DO
+                                        </a>
+                                        <div class="dropdown-menu dropdownard-content px-4 py-5" aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Work</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Educational Seminars</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Free Education</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Research</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Reach</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Schools covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Colleges Covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Impact</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Success Stories</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Experiences</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.6s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace" href="javascript:void(0);" role="button"
+                                            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                            GET INVOLVED
+                                        </a>
+                                        <div class="dropdown-menu dropdownard-content px-4 py-5" aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <h4 class="dropdown-item1" style="font-weight: bold;">How to help</h4>
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Volunteering Opportunity</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Talent Magnet</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Carrier</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Young leader collective</a></li>
+                                                            <li><a class="dropdown-item" href="#">CSR Opportunity</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Fund Raise with us</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Fundraising Campaigns</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Online Donations</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Occasional Donations</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Montly Donations</a></li>
+                                                            <li><a class="dropdown-item" href="#">Yearly Donations</a></li>
+                                                            <!-- <li><a class="dropdown-item" href="#"></a></li> -->
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Sponsor a kid</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Sponsor a School</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Donate in Honor</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Donate in Memory</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                
+                                <!-- <li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.2s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace" href="javascript:void(0);" role="button"
+                                            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                            PROGRAMS
+                                        </a>
+                                        <div class="dropdown-menu dropdownard-content px-4 py-5" aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Work</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Educational Seminars</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Free Education</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Research</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Reach</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Schools covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Colleges Covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Impact</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Success Stories</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Experiences</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li> -->
+                                
+
+
+
+
+
+                                <li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 0.8s;">
+                                    <div class="dropdownard">
+                                        <a class="nav-link text-light text-decoration-none font-monospace" href="javascript:void(0);" role="button"
+                                            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                            BLOGS
+                                        </a>
+                                        <div class="dropdown-menu dropdownard-content px-4 py-5" aria-labelledby="dropdownMenuLink">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Work</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Educational Seminars</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Free Education</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Research</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1" style="border-right: 2px solid rgba(255, 255, 255, 0.587);">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Our Reach</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Schools covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Colleges Covered</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 px-1">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="#">Impact</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Success Stories</a></li><br>
+                                                            <li><a class="dropdown-item" href="#">Experiences</a></li><br>
+                                                            <li><a class="dropdown-item" href="#"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+
+
+
+                                
+<li class="nav-item px-2 text-light" style="animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 1.0s;">
+    <button type="button"
+        class="nav-item btn text-decoration-none font-monospace text-light donate-btn">
+        DONATE
+    </button>
+</li>
+<li class="nav-item px-2 text-light" style="animation: zoomOutIn 1.0s ease-in-out forwards; animation-delay: 1.2s;">
+    <button type="button"
+        class="nav-item btn btn-warning text-decoration-none font-monospace login-btn">
+        Login
+    </button>
+</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Offcanvas Component -->
+    <div class="offcanvas offcanvas-end text-bg-dark" id="navbarOffcanvas">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Menu</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <!-- <li class="mr-1">
+                    <a class="navbar-brand" href="#">
+                        <img src="ajinkya.jpeg" alt="AJINKYA" style="width: 40px;" class="rounded-circle me-4">
+                    </a>
+                </li> -->
+                <li class="menu_mm px-1 text-light">
+                    <a href="#about-us" class="nav-link text-light text-decoration-none font-monospace"
+                        style="font-weight: bold;">ABOUT US</a>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <a href="#get-involved" class="nav-link text-light text-decoration-none font-monospace"
+                        style="font-weight: bold;">GET INVOLVED</a>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <a href="#programs" class="nav-link text-light text-decoration-none font-monospace"
+                        style="font-weight: bold;">PROGRAMS</a>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <a href="#blogs" class="nav-link text-light text-decoration-none font-monospace"
+                        style="font-weight: bold;">BLOGS</a>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <div class="dropdownard show">
+                        <a class="btn btn-block dropdown-toggle dropbtnard nav-link text-light text-decoration-none font-monospace"
+                            style="font-weight: bold;" href="javascript:void(0);" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu dropdownard-content" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="/category/{{cat.url}}">{{cat.title}}</a>
+                            <a href="/our_youtube_videos" class="dropdown-item">Videos</a>
+                            <a href="/gallery" class="dropdown-item">Gallery</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_mm px-1 text-light">
+                    <button type="button" class="nav-item btn btn-warning text-decoration-none font-monospace"
+                        style="font-weight: bold; animation: zoomOutIn 0.8s ease-in-out forwards; animation-delay: 1.0s;">DONATE</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+<div class="page-bar">
+    <div class="container">
+        <a href="../html/index.html" class="text-decoration-none">Home</a> > Leadership Team
+    </div>
+</div>
+
+
+    <div class="container">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam nam iure amet voluptate ea eum eveniet vero repudiandae, perspiciatis consequuntur cum tenetur exercitationem odit dignissimos quae sed libero suscipit voluptates commodi minus expedita dolorum. Ipsa modi labore pariatur possimus error, explicabo ipsam aut deleniti consequatur blanditiis nesciunt iste distinctio vero similique molestias minus quam veniam ab mollitia quos libero vel numquam amet quisquam? Id, nobis blanditiis ex, et eius adipisci provident corrupti veritatis nulla eaque harum esse est aliquid libero consequatur veniam earum temporibus rem? Eius assumenda voluptas, officiis doloremque itaque commodi quaerat beatae reiciendis ipsam cum nostrum, autem aut explicabo amet enim obcaecati? Fugiat consectetur architecto adipisci dolorum. Perspiciatis repellendus neque accusamus dicta quasi nisi alias, quas quod. In maiores odit corrupti praesentium ad voluptas ab voluptatum ullam facere repellat, excepturi facilis maxime. Iste nesciunt optio vero repellendus laborum, maxime cumque quos recusandae voluptatem quidem tempora consectetur numquam architecto doloremque nostrum ab! Dolores asperiores error eius, eos, minus rerum suscipit illum laudantium quod consequuntur quam iusto nisi perferendis? Est voluptatum dolorem sequi illo ipsa iusto, officia animi nemo maiores reiciendis veritatis esse dolor facere, vitae optio praesentium unde eaque maxime libero dicta tempora dolore iure. Maiores at ullam iure magni voluptatem! Est molestias laudantium corporis atque consectetur doloribus culpa dolorum, itaque nobis, veniam nihil. Dolorem, odio? Assumenda inventore quaerat ipsa, quos animi ipsum porro ipsam eius officiis quisquam commodi perferendis quam cumque. Iusto vitae, dolorem, beatae perspiciatis a ullam laboriosam itaque, eos perferendis atque aliquam. Pariatur at deleniti libero laboriosam id, quam ab! Illum ipsa voluptates temporibus error at exercitationem unde iste nesciunt recusandae ad quia eaque non quisquam dignissimos, rem tempora odio nemo fugiat ex labore? Esse fugit, repellat doloribus dolore atque tempore adipisci voluptas sunt illo, dolorem quasi iusto labore molestias eveniet? Accusantium libero ducimus dolorem possimus, autem nostrum error laborum natus provident voluptatum corporis, distinctio voluptas. Ea, maxime consectetur! Iste officia, dignissimos accusantium quasi animi odit debitis numquam. Sed tempore perferendis quos, provident suscipit possimus corporis quo facilis sint modi! Ad, a? Unde harum esse reprehenderit voluptates delectus ex voluptatibus, laboriosam incidunt ratione suscipit consequatur alias perspiciatis ipsa. Eligendi praesentium minus accusamus, reprehenderit neque consectetur, qui ea vitae quos facere dolorem, voluptate molestiae omnis quasi odio quaerat.</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quibusdam assumenda praesentium cum expedita quasi fugiat, ad autem nihil corporis perferendis doloribus quis nemo blanditiis sed rem rerum unde corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi enim expedita totam error cupiditate laudantium. Ullam optio iusto eaque, molestiae ducimus quia! Iste similique voluptatibus aut suscipit commodi! Dolore, vitae.lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt soluta facilis eligendi ex vel ipsa animi assumenda quia accusantium, omnis perspiciatis excepturi repudiandae consequuntur, beatae rerum ad laudantium dolorem!
+        
+    </div>
+
+
+    
+    <section class="darkblue-bg p-5 pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20 ctc">
+        <div class="container">
+            <div class="row align-items-center justify-content-between"> <!-- Adjusted for better alignment -->
+                <div class="col-lg-9 col-md-9 col-sm-12 text-right">
+                    <h3 class="montextralight heading color-white">The Best Way to Make a Difference in the Lives of
+                        Others</h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 text-left"> <!-- Removed unnecessary wrapper div -->
+                    <a class="donate-btn_call_to_a" href="onlinedonations">DONATE NOW</a>
+                    <!-- Direct link for simplicity -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+    <footer id="colophon" class="site-footer">
+        <div class="footersection">
+            <div class="container footer">
+                <div class="row">
+                    <div
+                        class="col-xl-3 col-12 newsletter-section text-lg-left text-md-left text-sm-center text-center">
+                        <div class="footer_logo_sec footer_center">
+                            <img src="includefiles/settings/logo1.png" class="img-fluid" alt="logo">
+                        </div>
+                        <div class="footcontent pt-20">
+                            <p class="montregular fs-14">
+                                The Akshaya Patra Foundation is a non profit organisation that strives to eliminate
+                                classroom hunger by implementing the Mid Day Meal Programme
+                            </p>
+                        </div>
+                        <div class="footer_content">
+                            <ul class="social_links">
+                                <li>
+                                    <a href="https://www.instagram.com/theakshayapatrafoundation/" target="_blank"
+                                        class="color-head">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://in.linkedin.com/company/the-akshaya-patra-foundation"
+                                        target="_blank" class="color-head">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/TheAkshayapatraFoundation" target="_blank"
+                                        class="color-head">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/akshayapatra" target="_blank" class="color-head">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCQ8TSAaij9nwDLfiaLotDDA" target="_blank"
+                                        class="color-head">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 mt-5	d-xl-none mobile-show">
+                            <div class="footer_links">
+                                <p class="m-0 text-left  color-head">Get IN Touch</p>
+                                <div class="AW-Form-316784773"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-9 d-lg-block d-md-block">
+                        <div class="row">
+                            <div class="col-6 col-xl-2">
+                                <div class="footer_links">
+                                    <p class="color-head">About Us</p>
+                                    <div class="menu-about-us-footer-container">
+                                        <ul id="menu-about-us-footer" class="footer_list">
+                                            <li>
+                                                <a href="about-us">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-vision-and-mission">Our Vision and Mission</a>
+                                            </li>
+                                            <li>
+                                                <a href="history">Inspiration – The story of Hope</a>
+                                            </li>
+                                            <li>
+                                                <a href="board-of-trustees">Board of Trustees</a>
+                                            </li>
+                                            <li>
+                                                <a href="tax-exemption-donation-faqs">Tax exemption donation faqs</a>
+                                            </li>
+                                            <li>
+                                                <a href="donors-privacy-policy">Term’s and Conditions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-2">
+                                <div class="footer_links">
+                                    <p class="color-head">Our Work</p>
+                                    <div class="menu-our-work-container">
+                                        <ul id="menu-our-work" class="footer_list">
+                                            <li>
+                                                <a href="our-work">Our Work</a>
+                                            </li>
+                                            <li>
+                                                <a href="feeding-for-education">Feeding For Education</a>
+                                            </li>
+                                            <li>
+                                                <a href="mid-day-meal">Mid-Day Meal</a>
+                                            </li>
+                                            <li>
+                                                <a href="disaster-relief-feeding">Relief feeding</a>
+                                            </li>
+                                            <li>
+                                                <a href="research-advocacy">Research &amp; Advocacy</a>
+                                            </li>
+                                            <li>
+                                                <a href="beyond-meals">Beyond Meals</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-2">
+                                <div class="footer_links">
+                                    <p class="color-head">Get Involved</p>
+                                    <div class="menu-get-involved-container">
+                                        <ul id="menu-get-involved" class="footer_list">
+                                            <li>
+                                                <a href="future-shaper">Future shaper</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-2">
+                                <div class="footer_links">
+                                    <p class="color-head">Donate</p>
+                                    <div class="menu-donate-container">
+                                        <ul id="menu-donate" class="footer_list">
+                                            <li>
+                                                <a href="onlinedonations">Online donations</a>
+                                            </li>
+                                            <li>
+                                                <a href="sponsor-a-school-for-a-year">Sponsor a School</a>
+                                            </li>
+                                            <li>
+                                                <a href="kitchen-equipment">Sponsor a kitchen</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-4 d-none d-sm-block">
+                                <div class="footer_links">
+                                    <p class="color-head">Get IN Touch</p>
+                                    <div class="menu-donate-container">
+                                        <ul id="menu-donate" class="footer_list">
+                                            <li>
+                                                <a href="contact-us">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <form name="subscribers" id="subscribers"
+                                            action="https://www.aweber.com/thankyou.htm" method="post"
+                                            novalidate="novalidate">
+                                            <div class="form-group">
+                                                <span>Subscribe E-newsletter</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="name" placeholder="Full Name"
+                                                    class="form-control style-1">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" name="email" placeholder="Email Address"
+                                                    class="form-control style-1">
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-submit">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="row">
+                    <div class="col-sm-3 text-lg-left text-md-left text-sm-center text-center">
+                        <div class="donate_upi pt-0">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="web_list web_list footer_links" style="display:none;">
+                                    <p class="color-head">REGIONAL WEBSITES</p>
+                                    <ul class="state_list">
+                                        <li>Andhra Pradesh</li>
+                                        <li>Assam</li>
+                                        <li>Gujarat</li>
+                                        <li>Karnataka</li>
+                                        <li>Odisha</li>
+                                        <li>Rajasthan</li>
+                                        <li>Tamil Nadu</li>
+                                        <li>Telangana</li>
+                                        <li>U.P.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <hr class="web_list_line">
+                            </div>
+                            <div class="col-sm-3 charity_id">
+                                <p>Charity Id : AAATT6468P</p>
+                            </div>
+                            <div class="col-sm-7 copyright">
+                                <!--<p>The Akshaya Patra Foundation © 2024 Website Developed & Maintenance By <a href="https://www.creativeyogi.com/">Creative Yogi</a></p>-->
+                                <p>The Akshaya Patra Foundation © 2024</p>
+                            </div>
+                            <div class="col-sm-2 copyright">
+                                <img src="includefiles/settings/GPTW23-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="includes/asset/image/footer_bg.png" alt="" class="footer_bg">
+        </div>
+    </footer>
+
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            var nav = document.querySelector('.main_nav');
+            nav.classList.toggle('active');
+        }
+
+
+    </script>
+    <script>
+        document.querySelectorAll('.offcanvas-body a').forEach(link => {
+            link.addEventListener('click', () => {
+                const offcanvasElement = document.querySelector('#navbarOffcanvas');
+                const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                bsOffcanvas.hide();
+            });
+        });
+
+    </script>
+
+
+    <!-- Include Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
